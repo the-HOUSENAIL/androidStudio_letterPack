@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/ToText"
+                    android:layout_width="133dp"
+                    android:layout_height="wrap_content"
+                    android:text="宛先"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/toAddBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="検索" />
+
+                <Button
+                    android:id="@+id/saveToBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="保存" />
+            </TableRow>
+
+            <TextView
+                android:id="@+id/ToPostalCodeText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="郵便番号" />
+
+            <EditText
+                android:id="@+id/EditToPostalCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="0000000"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/ToAddressText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="都道府県・市区町村・番地" />
+
+            <EditText
+                android:id="@+id/EditToAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="○○都〇〇区〇〇0-0-0"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/ToIncludeBuilding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="建物名・号室" />
+
+            <EditText
+                android:id="@+id/EditToIncludeBuilding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="○○○　〇〇号室"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/ToNameText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="氏名・会社名" />
+
+            <EditText
+                android:id="@+id/EditToName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="姓名"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/ToTelText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="電話番号" />
+
+            <EditText
+                android:id="@+id/EditToTel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="phone" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/ForText"
+                    android:layout_width="133dp"
+                    android:layout_height="wrap_content"
+                    android:text="依頼主"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/forAddBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="検索" />
+
+                <Button
+                    android:id="@+id/saveForBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="保存" />
+            </TableRow>
+
+            <TextView
+                android:id="@+id/ForPostalCodeText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="郵便番号" />
+
+            <EditText
+                android:id="@+id/EditForPostalCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="0000000"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/ForAddressText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="都道府県・市区町村・番地" />
+
+            <EditText
+                android:id="@+id/EditForAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="○○都〇〇区〇〇0-0-0" />
+
+            <TextView
+                android:id="@+id/ForIncludeBuilding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="建物名・号室" />
+
+            <EditText
+                android:id="@+id/EditForIncludeBuilding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="○○○　〇〇号室" />
+
+            <TextView
+                android:id="@+id/ForNameText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="氏名・会社名" />
+
+            <EditText
+                android:id="@+id/EditForName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="姓名" />
+
+            <TextView
+                android:id="@+id/ForTelText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="電話番号" />
+
+            <EditText
+                android:id="@+id/EditForTel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/ContentsText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="品名"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/EditContents"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="〇〇"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/ConfirmButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="ConfirmBtn"
+                android:text="確定" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

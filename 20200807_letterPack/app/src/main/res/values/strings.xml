@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">letterPack</string>
+    <string name="To">宛先</string>
+    <string name="button">Save Image</string>
+    <string name="description">a picture</string>
+    <string name="clean">DELETE</string>
+    <string name="save">SAVE</string>
+    <string name="finish">FINISH</string>
+</resources>
